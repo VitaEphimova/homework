@@ -1,0 +1,18 @@
+'''
+Запросить любое число. Заменить каждую цифру этого числа буквой, 
+у которой номер в алфавите равен этой цифре. 
+Алфавит считаем от 0. a-0, b-1, c-3 и т.д.
+Например: 13520 -> bdfca.
+'''
+
+num = input("Введите число: ")
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"   
+
+result = ""   
+
+for digit in num:
+    index = int(digit)        
+    result += alphabet[index] 
+
+print(result)

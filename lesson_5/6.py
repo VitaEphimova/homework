@@ -23,8 +23,8 @@ some_list = [111, 222, 333, 444, 555, 666, 777, 888, 999].
 
 some_list = [111, 222, 333, 444, 555, 666, 777, 888, 999]
 
-def dash_digits(x):          # функция для превращения 111 → 1-1-1
-    return "-".join(str(x))  # str(x) → "111"; "-".join("111") → "1-1-1"
+def dash_digits(x):         
+    return "-".join(str(x))  
 
 result = "---".join(map(dash_digits, some_list))
 
